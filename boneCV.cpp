@@ -10,8 +10,7 @@ using namespace std;
 using namespace cv;            // using the cv namespace too
 
 int main()
-{
-   cout << "TEST start" << endl;
+{   
     VideoCapture capture(0);   // capturing from /dev/video0
 
     cout << "Started Processing - Capturing Image" << endl;
@@ -22,7 +21,6 @@ int main()
     if(!capture.isOpened()){   // connect to the camera
        cout << "Failed to connect to the camera." << endl;
     }
-
     Mat frame, gray, edges;    // images for orignal, grayscale and edge image
     capture >> frame;          // capture the image to the frame
     if(frame.empty()){         // did the capture succeed?
