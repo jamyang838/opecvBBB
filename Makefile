@@ -1,7 +1,7 @@
 ALL: main	exe
 	
 main: 
-	@g++ -O2 `pkg-config --cflags --libs opencv` boneCV.cpp -o out
+	@g++ -O2 `pkg-config --cflags --libs opencv` main.cpp -o out
 
 exe:
 	@./out
