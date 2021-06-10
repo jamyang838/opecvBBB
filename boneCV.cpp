@@ -11,6 +11,7 @@ using namespace cv;            // using the cv namespace too
 
 int main()
 {
+   cout << "TEST start" << endl;
     VideoCapture capture(0);   // capturing from /dev/video0
 
     cout << "Started Processing - Capturing Image" << endl;
