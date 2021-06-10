@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/debian/source/exploringBB/chp14/openCV'
+rm *.o 
+g++ -O2 `pkg-config --cflags --libs opencv` boneCV.cpp -o ttt
+make: Leaving directory '/home/debian/source/exploringBB/chp14/openCV'
+ 
