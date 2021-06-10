@@ -35,8 +35,9 @@ int main()
       //cvtColor(frame, gray, CV_BGR2GRAY); // convert to grayscale
       cvtColor(frame, lab, CV_BGR2Lab); // convert to Lab
       uint8_t l, a, b = 0;
-      cout << frame.depth() << endl;
-      cout << lab.depth() << endl;
+      cout << lab.dims << endl;
+      cout << lab.cols << endl;
+      cout << lab.rows << endl;
    }
    //*****************************
    capture >> frame; // capture the image to the frame
