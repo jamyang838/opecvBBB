@@ -1,4 +1,4 @@
-ALL: clean	main	exe
+ALL: main	exe
 	
 main: 
 	@g++ -O2 `pkg-config --cflags --libs opencv` boneCV.cpp -o out
